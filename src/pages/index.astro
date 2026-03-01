@@ -1,19 +1,45 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
-import siteData from '../data/site.json';
+import PropertyHero from '../components/PropertyHero.astro';
+import PropertySpecs from '../components/PropertySpecs.astro';
+import PropertyDescription from '../components/PropertyDescription.astro';
+import apartmentData from '../data/apartment.json';
 ---
-<BaseLayout title={siteData.siteName} description={siteData.metaDescription}>
+
+<BaseLayout title={apartmentData.title} description={apartmentData.description.intro}>
   <main>
-    <Hero content={siteData.hero} />
+    <PropertyHero 
+      title={apartmentData.title}
+      address={apartmentData.address}
+      price={apartmentData.price}
+      image={apartmentData.heroImage}
+    />
     
-    <div class="mx-auto max-w-3xl px-6 py-12">
-      {siteData.sections.map((section) => (
-        <article id={section.id} class="prose prose-slate max-w-none">
-          <h2 class="text-3xl font-bold border-b pb-4 mb-6">{section.heading}</h2>
-          <p class="text-lg text-slate-700 leading-relaxed">{section.text}</p>
-        </article>
-      ))}
-    </div>
+    <PropertySpecs stats={apartmentData.stats} />
+    
+    <PropertyDescription 
+      description={apartmentData.description}
+      features={apartmentData.features}
+    />
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-indigo-900 text-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">Zainteresowany?</h2>
+        <p class="text-xl text-indigo-100 mb-10 max-w-2xl mx-auto">
+          {apartmentData.contact.text}
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-8">
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+            <p class="text-sm uppercase tracking-widest text-indigo-300 mb-2">Zadzwoń</p>
+            <p class="text-2xl font-bold">{apartmentData.contact.phone}</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+            <p class="text-sm uppercase tracking-widest text-indigo-300 mb-2">Napisz e-mail</p>
+            <p class="text-2xl font-bold">{apartmentData.contact.email}</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </BaseLayout>
