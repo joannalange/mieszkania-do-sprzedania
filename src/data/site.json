@@ -1,0 +1,16 @@
+{
+  "siteName": "The Mind of AI",
+  "metaDescription": "A high-performance portal exploring the frontiers of AI architecture.",
+  "hero": {
+    "title": "Architecting the Future",
+    "subtitle": "Modular systems design for a new era of intelligence.",
+    "cta": "Explore the Systems"
+  },
+  "sections": [
+    {
+      "id": "mission",
+      "heading": "Our Philosophy",
+      "text": "We prioritize modularity, speed, and clean code above all else. Every component is designed to be lean, accessible, and high-performance."
+    }
+  ]
+}

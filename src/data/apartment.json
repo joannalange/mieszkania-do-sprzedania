@@ -1,0 +1,44 @@
+{
+  "title": "Klimatyczne 4 pokoje na Starym Mokotowie",
+  "address": "ul. Odolańska, Stary Mokotów",
+  "price": "1 490 000 PLN",
+  "pricePerMeter": "17 205 PLN/m²",
+  "stats": [
+    { "label": "Powierzchnia", "value": "86,6 m²" },
+    { "label": "Pokoje", "value": "4" },
+    { "label": "Piętro", "value": "Ostatnie" },
+    { "label": "Balkon", "value": "9,5 m²" }
+  ],
+  "heroImage": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=2000",
+  "description": {
+    "intro": "Szukasz miejsca, które nie jest kolejnym pudełkiem od dewelopera? Na Odolańskiej czeka przestrzeń z duszą, która czeka na kogoś z pomysłem i miłością do Starego Mokotowa.",
+    "sections": [
+      {
+        "title": "Salon z klimatem",
+        "content": "Serce mieszkania to salon o powierzchni 24,4 m² z kominkiem. Unikalnym atutem jest możliwość wykonania świetlika w dachu, co doświetli przestrzeń naturalnym światłem i nada jej loftowego charakteru."
+      },
+      {
+        "title": "Przestrzeń i Funkcjonalność",
+        "content": "Oddzielna, widna kuchnia z jadalnią (14,3 m²), trzy ustawne sypialnie, duża łazienka i osobne WC. To idealny układ dla rodziny lub osób potrzebujących domowego biura."
+      },
+      {
+        "title": "Lokalizacja: Serce Mokotowa",
+        "content": "Między Parkiem Morskie Oko a Parkiem Dreszera. 700 m do Metra Racławicka. Kultowe piekarnie i niszowe kawiarnie w zasięgu kilku minut spaceru."
+      }
+    ]
+  },
+  "features": [
+    "Kominek w salonie",
+    "Możliwość świetlika w dachu",
+    "Dwustronna ekspozycja (północ-południe)",
+    "Zadaszony balkon 9,5 m²",
+    "Ciche, zielone patio",
+    "Zamknięte osiedle",
+    "Ostatnie piętro (brak sąsiadów powyżej)"
+  ],
+  "contact": {
+    "text": "Sprzedaż bezpośrednia. Zapraszamy do kontaktu i obejrzenia mieszkania na żywo.",
+    "phone": "+48 XXX XXX XXX",
+    "email": "kontakt@odolanska.pl"
+  }
+}

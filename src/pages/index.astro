@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import siteData from '../data/site.json';
+---
+<BaseLayout title={siteData.siteName} description={siteData.metaDescription}>
+  <main>
+    <Hero content={siteData.hero} />
+    
+    <div class="mx-auto max-w-3xl px-6 py-12">
+      {siteData.sections.map((section) => (
+        <article id={section.id} class="prose prose-slate max-w-none">
+          <h2 class="text-3xl font-bold border-b pb-4 mb-6">{section.heading}</h2>
+          <p class="text-lg text-slate-700 leading-relaxed">{section.text}</p>
+        </article>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
